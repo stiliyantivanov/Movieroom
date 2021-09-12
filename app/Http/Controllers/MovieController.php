@@ -37,7 +37,7 @@ class MovieController extends Controller
 
     public function create()
     {
-        $this->authorize('create');
+        //$this->authorize('create', App\Movie::class);
         
         return view('movie.create', [
             'actors' => Actor::all(),
@@ -47,7 +47,7 @@ class MovieController extends Controller
 
     public function store(Request $request)
     {
-        $this->authorize('create');
+        //$this->authorize('create', App\Movie::class);
         
         $attributes = request()->validate([
             'name' => 'required|max:255',

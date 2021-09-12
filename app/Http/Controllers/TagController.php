@@ -31,7 +31,7 @@ class TagController extends Controller
     
     public function store()
     {
-        $this->authorize('create');
+        //$this->authorize('create', App\Tag::class);
         
         $attribute = request()->validate([
             'name' => 'required|max:50',

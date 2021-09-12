@@ -34,14 +34,14 @@ class ActorController extends Controller
 
     public function create()
     {
-        $this->authorize('create');
+        //$this->authorize('create', App\Actor::class);
 
         return view('actor.create');
     }
     
     public function store(Request $request)
     {
-        $this->authorize('create');
+        //$this->authorize('create', App\Actor::class);
 
         $attribute = request()->validate([
             'name' => 'string|required|max:100',

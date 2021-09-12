@@ -1,5 +1,5 @@
 <x-home>
-    @can('create')
+    @can('create', App\Actor::class)
         <div class="flex items-center justify-end">   
             <a href="/actors/create" class="rounded-lg bg-green-400 hover:bg-green-600 shadow-lg text-xl text-white font-bold mb-6 px-6 py-1">
                 Add a new actor

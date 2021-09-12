@@ -1,5 +1,5 @@
 <x-home>
-    @can('create')
+    @can('create', App\Tag::class)
         <div class="mb-8 bg-white rounded-lg border-4 border-red-400 shadow-lg p-6">
             <form method="post" action="/tags">
                 @csrf

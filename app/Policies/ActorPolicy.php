@@ -25,7 +25,9 @@ class ActorPolicy
      */
     public function create(User $user)
     {
-        //
+        if($user->is_admin) {
+            return true;
+        }
     }
 
     /**
