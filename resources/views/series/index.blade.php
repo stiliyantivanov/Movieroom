@@ -1,5 +1,5 @@
 <x-home>
-    @can('create', App|Movie::class)
+    @can('create', App\Movie::class)
         <div class="flex items-center justify-end">   
             <a href="/series/create" class="rounded-lg bg-green-400 hover:bg-green-600 shadow-lg text-xl text-white font-bold mb-6 px-6 py-1">
                 Add a new series
@@ -41,7 +41,7 @@
                 <div class="flex items-center justify-end">
 
                     @auth
-                        <a href="/reviews/{{$movie->id}}/create" class="rounded-lg bg-green-400 hover:bg-green-600 shadow-lg text-xl text-white font-bold mb-6 mr-2 px-6 py-1">
+                        <a href="/reviews/{{$movie->id}}/create" class="rounded-lg bg-blue-400 hover:bg-blue-600 shadow-lg text-xl text-white font-bold mb-6 mr-2 px-6 py-1">
                             Write a review
                         </a> 
                     @endauth  

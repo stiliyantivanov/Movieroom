@@ -47,7 +47,7 @@
     </div>
     <div class="flex items-center justify-end">
         @auth
-            <a href="/reviews/{{$series->id}}/create" class="rounded-lg bg-green-400 hover:bg-green-600 shadow-lg text-xl text-white font-bold mb-6 mr-2 px-6 py-1">
+            <a href="/reviews/{{$series->id}}/create" class="rounded-lg bg-blue-400 hover:bg-blue-600 shadow-lg text-xl text-white font-bold mb-6 mr-2 px-6 py-1">
                 Write a review
             </a> 
         @endauth 
